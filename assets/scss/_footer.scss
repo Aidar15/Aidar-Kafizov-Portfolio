@@ -1,0 +1,38 @@
+.footer {
+    background-color: #000;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        width: 180px;
+        justify-content: space-between;
+
+        @media(min-width: 700px) and (max-width: 1220px) {
+            width: 220px;
+        }
+
+        @media(min-width: 1220px) {
+            width: 250px;
+        }
+    }
+}
+
+.fa-brands {
+    font-size: 25px;
+    color: #fff;
+    transition: 0.5s ease all;
+    @media(min-width: 700px) and (max-width: 1220px) {
+        font-size: 30px;
+    }
+
+    @media(min-width: 1220px) {
+        font-size: 33px;
+        &:hover {
+            color: #F0C30B;
+            cursor: pointer;
+            transition: 0.5s ease all;
+        }
+    }
+}
